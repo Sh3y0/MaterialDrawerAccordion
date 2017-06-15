@@ -1,0 +1,63 @@
+﻿/**
+ * Crecer Custom 
+ * @version v1.0.0
+ * @copyright 2016 dnds,
+ * @link http://www.dnds-systems.com
+ */
+@charset "UTF-8";
+/**
+ * Copyright 2015
+ * CREATED BY 
+ * Eliseo Gomez
+ * email: jose.eliseo.gomez@gmail.com
+/* Material Design Lite */
+/**
+ * Copyright 2015
+ */
+
+
+.fab-animation-button {
+	/* Firefox */
+	-moz-transition: all 0.4s ease;
+	/* WebKit */
+	-webkit-transition: all 0.4s ease;
+	/* Opera */
+	-o-transition: all 0.4s ease;
+	/* Standard */
+	transition: all 0.4s ease;
+}
+
+.cancel-option {
+	background-color: #FF1744 !important;
+	color: #FFF;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.agree-option {
+	background-color: #00C853 !important;
+	color: #FFF;
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+    .agree-option:disabled {
+        background-color: rgba(0, 0, 0, 0.26) !important;
+	    color: #FFF;
+    }
+
+    .cancel-option:disabled {
+        background-color: rgba(0, 0, 0, 0.26) !important;
+	    color: #FFF;
+    }
+
+.disable-option {
+	background-color: rgba(0, 0, 0, 0.26) !important;
+	color: #FFF;
+}

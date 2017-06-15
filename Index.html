@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Pago de beneficios a pencionados CRECER">
+
+    <title>Page Tittle</title>
+    <!--Initializing Material design resources-->
+    <!--LOCAL RESOURCES-->
+    <link href="Libs/MDL/res/RobotoTTF/RobotoFont.css" rel="stylesheet" />
+    <link href="Libs/MDL/res/MaterialIcons/material-icons.css" rel="stylesheet">
+
+    <!--MDL LIBRARY CSS-->
+    <link rel="stylesheet" href="Libs/MDL/css/material.min.css">
+    <script defer src="Libs/MDL/js/material.js"></script>
+
+    <!--material accordio-->
+    <link rel="stylesheet" type="text/css" href="Libs/MaterialDrawer/css/demo.css">
+    <link rel="stylesheet" type="text/css" href="Libs/MaterialDrawer/css/jquery.accordion.css">
+</head>
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+        <!--Header Content-->
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">TITULO DE APLICACION</span>
+            </div>
+        </header>
+        <!--Drawer-->
+        <div class="mdl-layout__drawer">
+            <nav class="mdl-navigation">       
+                <section id="multiple" data-accordion-group>
+                  <section data-accordion>
+                    <a class="mdl-navigation__link" href="#" data-control>Item 1</a>
+                    <div data-content>
+                      <article>
+                        <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 1</a>
+                      </article>
+                      <article>
+                          <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 2</a>
+                      </article>
+                      <article>
+                          <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 3</a>
+                      </article>
+                      <article>
+                          <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 4</a>
+                      </article>
+                    </div>
+                  </section>
+
+                  <section data-accordion>
+                    <a class="mdl-navigation__link" href="#" data-control>Item 2</a>
+                    <div data-content>
+                      <article>
+                        <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 1</a>
+                      </article>
+                      <article>
+                          <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 2</a>
+                      </article>
+                      <article>
+                          <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 3</a>
+                      </article>
+                      <article>
+                          <a class="mdl-navigation__link" href="#"><i class="material-icons" role="presentation">assessment</i>Item 4</a>
+                      </article>
+                    </div>
+                  </section>
+            </nav>
+        </div>
+        <!--End Drawer-->
+
+        <main class="mdl-layout__content mdl-color--grey-100">
+            <div class="page-content">
+                
+            </div>
+        </main>
+    </div>
+</body>
+</html>
+
+<script src="Libs/MaterialDrawer/js/jquery3.1.0.min.js"></script>
+<script type="text/javascript" src="Libs/MaterialDrawer/js/jquery.accordion.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#only-one [data-accordion]').accordion();
+
+        $('#multiple [data-accordion]').accordion({
+          singleOpen: false
+        });
+
+        $('#single[data-accordion]').accordion({
+          transitionEasing: 'cubic-bezier(0.455, 0.030, 0.515, 0.955)',
+          transitionSpeed: 200
+        });
+    });
+</script>
